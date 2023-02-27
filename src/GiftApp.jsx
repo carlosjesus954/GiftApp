@@ -1,10 +1,10 @@
 import React from 'react'
+import { Header } from './components/Header'
 
 export const GiftApp = () => {
   return (
     <>
-      <h1>Joselu Es</h1>
-      <h2>Marikaaaa!</h2>
+      <Header />
     </>
   )
 }

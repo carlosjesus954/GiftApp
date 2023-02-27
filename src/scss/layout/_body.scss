@@ -2,6 +2,8 @@
 @use "../base/mixins" as m;
 
 body{
-  background-color: black;
-  color: #ffffff;
+    background-color: v.$colorLetra3;
+}
+ul{
+    list-style: none;
 }

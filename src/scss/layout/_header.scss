@@ -1,0 +1,29 @@
+@use "../base/variables" as v;
+@use "../base/mixins" as m;
+
+.header{
+    @include m.flex(row wrap,center,center,1rem);
+    &__logo{
+
+    }
+    &__ul{
+    @include m.flex(row wrap,center,center,1rem);
+
+    }
+    &__li{
+
+    }
+    &__enlace{
+
+    }
+    &__social{
+
+    }
+    &__nav{
+
+    }
+}
+.icon__social{
+    width: 40px;
+    fill: v.$colorLetra;
+}
