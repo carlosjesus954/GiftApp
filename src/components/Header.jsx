@@ -1,10 +1,10 @@
-import {Linkedin, Github, Portfolio, Burguer} from './icons'
+import {Linkedin, Github, Portfolio} from './icons'
 
 
 export const Header = () => {
   return (
     <header className='header'>
-        <img src="" alt="Logo" className='header__logo'/>
+        <h1 className='header__h1'>CarlosCompany</h1>
         <nav className="header__nav">
             <ul className="header__ul">
                 <li className="header__li" >
