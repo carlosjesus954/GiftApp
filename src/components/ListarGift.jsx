@@ -1,16 +1,14 @@
 // import { useState } from "react";
 
-export const ListarGift = ({ categories, actualizarCategorias }) => {
+export const ListarGift = ({ categories }) => {
   return (
     <>
-      
-      <ul className="main__ul">
-        {categories.map((category) => {
-          return <li key={category}>{category}</li>;
-        })}
-        {/* <li className="main__ul">Hola</li> */}
-      </ul>
-
+      {categories.map((category) => (
+        <div key={category}>
+          <h1>{category}</h1>
+          <p>{category}</p>
+        </div>
+      ))}
     </>
   );
 };
