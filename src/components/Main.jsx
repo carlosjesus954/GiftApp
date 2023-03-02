@@ -9,7 +9,7 @@ export const Main = () => {
     setCategories([newCategory, ...categories]);
   };
   return (
-    <main className="main">
+    <main className="main wrapper">
       {/* Buscador */}
       <AddGift
         // setCategories={setCategories}

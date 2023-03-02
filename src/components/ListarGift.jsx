@@ -19,8 +19,8 @@ export const ListarGift = ({ category }) => {
   }, [] )
   return (
     <>
-      <h1>{category}</h1>
-      <div>
+      <h2 className="main__titulo" >{category}</h2>
+      <div className="main__container">
         {
           images.map((image) =>{
             return(
