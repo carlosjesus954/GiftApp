@@ -12,7 +12,9 @@ export const AddGift = ({ onNewCategory }) => {
     onNewCategory(inputValue.trim());
     setInputValue("");
   };
+  
   return (
+
     <form action="#" method="#" className="main__form" onSubmit={buscarMeme}>
       <input
         type="text"
@@ -22,6 +24,7 @@ export const AddGift = ({ onNewCategory }) => {
         placeholder="Buscar gift"
         className="main__input"
       />
+
     </form>
   );
 };

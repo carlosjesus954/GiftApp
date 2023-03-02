@@ -2,22 +2,26 @@ import { AddGift, ListarGift } from "./index";
 import { useState } from "react";
 
 export const Main = () => {
-  const [categories, setCategories] = useState(["One punch", "Goku", "Deku"]);
+  const [categories, setCategories] = useState(["Deku"]);
 
-  const onAddCategory = (newCategory) =>{
-    if (categories.includes(newCategory)) return
-    setCategories([...categories, newCategory])
-  }
+  const onAddCategory = (newCategory) => {
+    if (categories.includes(newCategory)) return;
+    setCategories([newCategory, ...categories]);
+  };
   return (
     <main className="main">
       {/* Buscador */}
-      <AddGift 
-      // setCategories={setCategories} 
-      onNewCategory={onAddCategory}
+      <AddGift
+        // setCategories={setCategories}
+        onNewCategory={onAddCategory}
       />
 
       {/* Listar */}
-      <ListarGift categories={categories} />
+      {categories.map((category) => {
+        return <ListarGift key={category} category={category} />;
+      })}
+
+      {/* <ListarGift categories={categories} /> */}
     </main>
   );
 };
